@@ -1,3 +1,7 @@
+**_A slightly more zen version of the smol theme with support for post "series". Inspired by the smol theme (below)_**
+
+---
+
 # smol
 
 A minimal, monospaced blogging theme for Hugo that respects your privacy and is easy on your bandwidth. A demo can be found at https://smol-demo.morph.sh.
