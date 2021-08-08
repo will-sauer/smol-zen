@@ -1,0 +1,29 @@
+{{ define "main" }}
+	<main>
+		{{ $listtitle := .Title }}
+		{{ if or .Title .Content }}
+		<div>
+			{{ with lower .Title }}<p class="taxonomy-header">{{ . }}</p>{{ end }}
+			{{ with .Content }}<div>{{ . }}</div>{{ end }}
+		</div>
+		{{ end }}
+		
+		
+		    {{ range .Paginator.Pages }}
+		    <div>
+		        <div>
+					<a class="list-item" href="{{ .RelPermalink }}">{{ .Title }}</a>
+					<div class="series-description">{{ .Description }} </div>
+					<div>{{ .Summary }} </div>
+					{{ range .Pages }}
+						<div class="post-title">
+							{{ .Date.Format "2006-01-02" }} <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+						</div>
+					{{ end }}
+		        </div>
+			</div>	
+		    {{ end }}
+		
+		{{ partial "pagination.html" . }}
+	</main>
+{{ end }}

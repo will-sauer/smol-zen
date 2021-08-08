@@ -1,0 +1,11 @@
+{{ define "main" }}
+	<main>
+		<p class="taxonomy-header">{{ "all posts" }}</p>
+		    {{ range .Paginator.Pages }}
+		        <div class="post-title" >
+				{{ .Date.Format "2006-01-02" }} <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+		        </div>
+		    {{ end }}
+		{{ partial "pagination.html" . }}
+	</main>
+{{ end }}

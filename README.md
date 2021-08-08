@@ -40,19 +40,19 @@ Lastly, add the following lines to your `config.toml` to set site parameters and
 [menu]
   [[menu.main]]
         identifier = "posts"
-        name = "Posts"
+        name = "posts"
         url = "/posts/"
         weight = 1 
 
   [[menu.main]]
         identifier = "categories"
-        name = "Categories"
+        name = "categories"
         url = "/categories/"
         weight = 2 
 
   [[menu.main]]
         identifier = "tags"
-        name = "Tags"
+        name = "tags"
         url = "/tags/"
         weight = 3
 
