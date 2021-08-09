@@ -35,13 +35,13 @@ body {
     margin-bottom: 26px;
     letter-spacing: .8px;
     line-height: 36.5px;
+    min-height: 36.5px;
 }
 
 .list-item {
     font:34px/1.36 roboto;color:var(--regularfont);
     font-size: 18px;
     font-weight: 450;
-    margin-bottom: 0px;
     letter-spacing: .8px;
     line-height: 18px;
 }
@@ -65,6 +65,10 @@ body {
 
 .series-description {
     margin-bottom: 7px;
+}
+
+.list-section {
+    margin-bottom: 35px;
 }
 
 .copyright {
@@ -108,7 +112,9 @@ p > code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
 
 pre{color: var(--precolor); background: var(--prebgcolor); padding:24px; overflow-x: auto}
 
-article{padding:24px 0}
+article{
+    margin-bottom: 12px;
+}
 
 .center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
 
