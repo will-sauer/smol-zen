@@ -80,6 +80,10 @@ a {
     text-decoration: none;
 }
 
+a.series-link {
+    color:var(--regularfont);
+}
+
 a.title-link {
     color:var(--regularfont);
 }

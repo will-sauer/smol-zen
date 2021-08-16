@@ -1,10 +1,12 @@
 <article class="list-section">
+
 	<a class="list-item" href="{{ .Permalink }}">{{ .Title }}</a>
 	<time class="list-item-metadata">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
-	
+
 	{{ with .Params.series }}
-	<a class="list-item-metadata" href="{{ "/series/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+		<a  class="list-item-metadata" href="{{ "/series/" | relLangURL }}{{ . | urlize }}">| {{ . }} series</a>
 	{{ end }}
+
 	<div>
 		{{ .Summary }} <a class="title-link" href="{{ .Permalink }}">Read more...</a>
 	</div>

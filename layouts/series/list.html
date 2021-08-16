@@ -15,7 +15,7 @@
 					<a class="list-item" href="{{ .RelPermalink }}">{{ .Title }}</a>
 					<div class="series-description">{{ .Description }} </div>
 					<div>{{ .Summary }} </div>
-					{{ range .Pages }}
+					{{ range sort .Pages ".Date" "asc" }}
 						<div class="post-title">
 							{{ .Date.Format "2006-01-02" }} <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
 						</div>
