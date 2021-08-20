@@ -1,4 +1,4 @@
-**_A slightly more zen version of the smol theme with support for post "series". Inspired by the smol theme (below)_**
+**_A slightly more zen version of the smol theme with support for "series" taxonomy. Inspired by the smol theme (below)_**
 
 ---
 
